@@ -10,7 +10,6 @@ const AnimatedSphere = () => {
                 attach="material"
                 distort={0.7}
                 speed={1.5}
-                
                 roughness={0}
             />
         </Sphere>

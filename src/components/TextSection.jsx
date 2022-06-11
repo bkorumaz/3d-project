@@ -5,7 +5,7 @@ export default function TextSection() {
     <Wrapper>
       <Title>Three.js in React</Title>
       <Description>
-        Bring your website to life with beautiful 3D objects
+        This project is created for practising Three.js in React
       </Description>
     </Wrapper>
   );

@@ -17,6 +17,7 @@ export default function App() {
     <Wrapper className="App">
       <Background />
       <TextSection />
+      
       <Canvas className="canvas">
         <OrbitControls enableZoom={false}/>
         <ambientLight intensity={0.5} />
@@ -25,6 +26,7 @@ export default function App() {
           <Box/>
         </Suspense>
       </Canvas>
+      
       <Canvas className="canvas">
         <OrbitControls enableZoom={false}/>
         <ambientLight intensity={0.5} />
@@ -33,6 +35,7 @@ export default function App() {
           <Sphere/>
         </Suspense>
       </Canvas>
+
     </Wrapper>
   );
 }
