@@ -7,6 +7,7 @@ export default function TextSection() {
       <Description>
         This project is created for practising Three.js in React
       </Description>
+      <Title2>Bahadır Korumaz</Title2>
     </Wrapper>
   );
 }
@@ -26,6 +27,14 @@ const Title = styled.h1`
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
+`;
+
+
+const Title2 = styled.h2`
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
 `;
 
 const Description = styled.p`

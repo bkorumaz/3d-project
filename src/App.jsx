@@ -19,6 +19,7 @@ export default function App() {
       <Background />
       <TextSection />
       
+      <Title>3D Cube</Title>
       <Canvas className="canvas">
         <OrbitControls enableZoom={false}/>
         <ambientLight intensity={0.5} />
@@ -28,6 +29,7 @@ export default function App() {
         </Suspense>
       </Canvas>
       
+      <Title>Bubble</Title>
       <Canvas className="canvas">
         <OrbitControls enableZoom={false}/>
         <ambientLight intensity={0.5} />
@@ -37,7 +39,8 @@ export default function App() {
         </Suspense>
       </Canvas>
       
-      <Canvas className="canvasb">
+      <Title>3D Earth Model</Title>
+      <Canvas className="canvas">
         <OrbitControls enableZoom={false}
           autoRotate={true}
           autoRotateSpeed={3}
@@ -51,15 +54,25 @@ export default function App() {
   );
 }
 
+const Title = styled.h1`
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  display: grid;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 70px;
+`;
+
 const Wrapper = styled.div`
   position: relative;
   background: #1f1144;
 
   canvas {
-    height: 500px;
-  }
-  canvasb {
-    height: 500px;
-    background: #000000;
+    height: 400px;
+    
+  position: relative;
   }
 `;

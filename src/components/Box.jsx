@@ -9,7 +9,7 @@ import texture from "../images/map.jpg"
 
     //geometry and material
      return(
-        <mesh rotation={[90, 0, 20]}>
+        <mesh rotation={[90, 0, 20]}  scale={1.0}>
             <boxBufferGeometry attach="geometry" args={[3, 3, 3]}/>
             <meshNormalMaterial map={colorMap}/>
         </mesh>
