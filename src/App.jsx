@@ -19,7 +19,7 @@ export default function App() {
       <Background />
       <TextSection />
       
-      <Title>3D Cube</Title>
+      <TitleWithoutMargin>3D Cube</TitleWithoutMargin>
       <Canvas className="canvas">
         <OrbitControls enableZoom={false}/>
         <ambientLight intensity={0.5} />
@@ -64,6 +64,18 @@ const Title = styled.h1`
   text-align: center;
   margin: 0 auto;
   margin-top: 70px;
+`;
+
+
+const TitleWithoutMargin = styled.h1`
+  color: rgba(255, 255, 255, 1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+  display: grid;
+  text-align: center;
+  margin: 0 auto;
 `;
 
 const Wrapper = styled.div`
