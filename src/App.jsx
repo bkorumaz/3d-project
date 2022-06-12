@@ -9,8 +9,6 @@ import Box from "./components/Box";
 import Sphere from "./components/AnimatedSphere"
 
 import "./styles.css";
-import Earth from "./components/Earth";
-import Earthquakes from "./components/Earthquakes";
 import Earthquakes2 from "./components/Earthquakes2";
 
 
