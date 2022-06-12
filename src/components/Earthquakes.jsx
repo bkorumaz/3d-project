@@ -11,7 +11,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('./public/earthquakes.gltf')
+  const { nodes, materials } = useGLTF('../../.vercel/output/static/earthquakes.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>

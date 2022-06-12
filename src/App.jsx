@@ -39,8 +39,11 @@ export default function App() {
         </Suspense>
       </Canvas>
       
-      <Canvas className="canvas">
-        <OrbitControls enableZoom={false}/>
+      <Canvas className="canvasb">
+        <OrbitControls enableZoom={false}
+          autoRotate={true}
+          autoRotateSpeed={3}
+        />
         <Suspense fallback={null}>
           <Earthquakes2/>
         </Suspense>
@@ -56,5 +59,9 @@ const Wrapper = styled.div`
 
   canvas {
     height: 500px;
+  }
+  canvasb {
+    height: 500px;
+    background: #000000;
   }
 `;
