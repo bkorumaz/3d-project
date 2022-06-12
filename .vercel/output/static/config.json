@@ -1,5 +1,0 @@
-  path?: string;
-  contentType?: string;
-};
-
-type OverrideConfig = Record<string, Override>;
