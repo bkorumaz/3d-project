@@ -11,7 +11,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model(props) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("../images/oceanic_currents.gltf");
+  const { nodes, materials } = useGLTF("https://raw.githubusercontent.com/bkorumaz/3d-project/main/src/images/oceanic_currents.gltf");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={3}>
